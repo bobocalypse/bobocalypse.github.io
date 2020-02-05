@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>about me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--   for every hcard(1,2,3,etc), add a corresponding #draggable(1,2,3,etc) and #drag(1,2,3,etc) to the function.-->
+
+    <script>
+        $(function() {
+            var a = 3;
+            $("#draggable, #draggable2, #draggable3").draggable({
+                handle: $("#drag, #drag2, #vDrag1"),
+                grid: [20, 20],
+                cancel: ".cardText",
+                containment: ".hCardContainer",
+                scroll: false,
+                start: function(event, ui) {
+                    $(this).css("z-index", a++);
+                }
+            });
+
+            $('.hCardFlex div').click(function() {
+                $(this).addClass('top').removeClass('bottom');
+                $(this).siblings().removeClass('top').addClass('bottom');
+                $(this).css("z-index", a++);
+
+            });
+
+            $("a").click(function() {
+                $(".top").removeClass("top").addClass("bottom");
+                var box = $(this).attr("href");
+                //alert(box);
+                $(box).addClass("top");
+                $(box).css("z-index", a++);
+            });
+
+            //            $("#draggable2").draggable({
+            //                handle: $("#drag2"),
+            //                grid: [20, 20],
+            //                cancel: ".cardText",
+            //            });
+            //            $("div, p").disableSelection();
+        });
+
+    </script>
+</head>
+
+
+<body>
+    <div class="workwrapper">
+        <div class="toptextbar">
+
+        </div>
+        <div class="toparrowbar">
+            <p id="topbarP">aboutme.html</p>
+            <div class="arrowwrapper"><span class="iconify" id="topbar" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" id="topbar" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" id="topbar" data-icon="bytesize:arrow-bottom" data-inline="false"></span>
+            </div>
+        </div>
+
+        <div class="hCardContainer">
+
+            <section class="hCardFlex">
+                <div class="vCardABOUT" id="draggable3">
+                    <div class="vCardleftcolumn">
+                        <span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span>
+                        <h3 id="cardlesson">Experience designer in training. Specializing in design systems. Making for identity, accessibility, authenticity and inclusion. Every great system should merge brand and product.</h3>
+                    </div>
+                    <div class="vCardrightcolumn">
+                        <p id="cardlessonABOUT">
+                            	&copy;2020 Robert Managad
+                        </p>
+                    </div>
+                    <div id="vDrag1">
+                        <p id="dragP">intro.pdf</p>
+                        <p id="dragP" style="text-align: right; padding-right:1rem;"><a href="immigration.html">resume</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="microspacer"></section>
+            
+            <div class="megif">
+                <img class="megifimage" src="images/homepage/face-me-4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footerWrapper">
+        <div class="fLeftcolumn">
+            <h1 class="aboutHeader">Who's this guy?</h1>
+            <p class="aboutText">Hey I’m Robert. I’m a Filipino-American experience designer and illustrator inspired by a questionable dose of web comics, cartoons, and stories passed down by people older than my parents. Talk to me about design systems—I’m a dork about them.</p>
+        </div>
+        <div class="fRightcolumn">
+            <nav>
+                <ul class="navstyle">
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="illustration.html">drawings</a></li>
+                    <li><a href="aboutme.html">about robert</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
