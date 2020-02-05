@@ -1,0 +1,892 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    overscroll-behavior: none;
+}
+
+body {
+    height: 100%;
+}
+
+.iconify {
+    width: 40px;
+    height: 40px;
+    padding-right: 12px;
+    color: white;
+}
+
+.iconify#ImmigrationCard {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.4rem;
+    left: 17.5rem;
+    color: black;
+}
+
+.iconify#SpotifyCard {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.3rem;
+    left: 11.9rem;
+    color: black;
+}
+
+
+.iconify#Immigration {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 19.35rem;
+    left: 18.75rem;
+    color: white;
+}
+
+.iconify#Illustration1 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 19.30rem;
+    left: 22.75rem;
+    color: white;
+}
+
+.iconify#Illustration2 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8.4rem;
+    left: 3.5rem;
+    color: white;
+}
+
+h1 {
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.17rem;
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
+}
+
+p {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+
+
+
+a {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.toparrowbar {
+    position: sticky;
+    width: 100%;
+    background-color: #212121;
+    border-bottom: solid 1px;
+    height: 2.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.arrowwrapper {
+    position: absolute;
+    right: 0px;
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+    float: left;
+}
+
+.iconify#topbar {
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+}
+
+#topbarP {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
+    position: absolute;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    float: left;
+}
+
+/* horizontal wrapper */
+
+.workwrapper {
+    /*    background-color: #eee;*/
+    height: 98%;
+    overflow-y: hidden;
+    /*change to adjust position of footer*/
+}
+
+.hCardContainer {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    background-image: url(images/background/dot-matrix-2-min.png);
+    background-size: cover;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*enables horizontal scroll (acts as sections)*/
+
+.hCardFlex {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+
+/* card type styles*/
+
+#cardH1 {
+    color: #000000;
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+#cardP {
+    color: #000000;
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding-right: 1.2rem;
+}
+
+#dragP {
+    height: inherit;
+    width: inherit;
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
+    position: absolute;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+/*card content design*/
+
+.cardText {
+    width: 26.55rem;
+    float: left;
+    padding-top: 2.4rem;
+    padding-right: 2.625rem;
+    padding-left: 2.625rem;
+
+}
+
+.cardImg {
+    width: 21.2rem;
+    float: left;
+    height: 100%;
+}
+
+/*handle card positions below each card must have a new number and #drag*/
+/*change top and x value of hCard*/
+
+
+.hCard1 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 7rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(6rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+
+/*
+#below {
+    height: 20.75rem;
+    background-color: #b4b4b4;
+    position: relative;
+    top: 11rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0.3rem);
+    transform: translateX(7rem);
+}
+*/
+
+.hCard2 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 18rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(-30rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag2 {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+
+
+/*lessons learned*/
+
+.vCard1 {
+    height: 33.75rem;
+    width: 27.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 4rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(-20rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#vDrag1 {
+    height: 2.45rem;
+    width: 27.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+.vCardleftcolumn {
+    width: 24rem;
+    height: 33.75rem;
+    float: left;
+    padding: 1.5rem;
+    padding-top: 1rem;
+}
+
+.vCardrightcolumn {
+    width: 3rem;
+    height: 33.75rem;
+    float: left;
+    /*    position: absolute;*/
+}
+
+.vCardABOUT {
+    height: 33.75rem;
+    width: 27.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 4rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(8rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#cardlesson {
+    color: #000000;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+#cardlessonP {
+    transform: rotate(-90deg);
+    /*	transform-origin: left top 0;*/
+    color: #000000;
+    /*
+    position: absolute;
+    top: 28rem;
+    left: 26rem;
+*/
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    position: relative;
+    top: 24.5rem;
+    left: 2rem;
+
+}
+
+#cardlessonABOUT {
+    /*	transform-origin: left top 0;*/
+    color: #000000;
+    /*
+    position: absolute;
+    top: 28rem;
+    left: 26rem;
+*/
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    position: relative;
+    top: 23.6rem;
+    left: 2rem;
+
+}
+
+.iconify#lessoncard {
+    color: #000000;
+}
+
+
+.thumbwrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.thumbtextwrapper {
+    background: #eee;
+    width: 100%;
+    height: 28%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.8rem;
+    border-top: solid 1px;
+    border-left-style: none;
+}
+
+.thumbtextwrapper h1 {
+    line-height: 2rem;
+    padding-bottom: 0.6rem;
+    padding-right: 2rem;
+}
+
+
+.thumbtextwrapper h2 {
+    padding-bottom: 0.2rem;
+}
+
+.thumbimg {
+    object-fit: cover;
+    height: 100%;
+    width: inherit;
+}
+
+
+/* footer*/
+
+
+
+.footerWrapper {
+    width: 100%;
+    height: 25%;
+    border-top: 1px solid black;
+    position: absolute;
+}
+
+.fLeftcolumn {
+    float: left;
+    width: 55%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.aboutHeader {
+    padding-top: 2.4rem;
+    padding-left: 7rem;
+    padding-right: 6.6rem;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.aboutText {
+    padding-top: 0.4rem;
+    padding-left: 7rem;
+    padding-right: 8.5rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    color: black;
+}
+
+.fRightcolumn {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+.navstyle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #555;
+    border-top: none;
+    border-bottom: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+li {
+    border-bottom: 1px solid #555;
+    height: 33.34%;
+
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:first-child {
+    border-top: none;
+}
+
+/*work page wrapper */
+
+.hScrollWorkPage {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background-color: #000000;
+}
+
+/*javascript HOLD*/
+
+.dragsection {
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.draggable {}
+
+#draggable {
+    cursor: auto;
+}
+
+#draggable2 {
+    cursor: auto;
+}
+
+#containment-wrapper {
+    width: 95%;
+    height: 150px;
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+#dragtext {
+    object-fit: cover;
+    height: 100%;
+    color: white;
+}
+
+#draggableImmigration {
+    cursor: auto;
+    height: 100%;
+    margin-left: -750px;
+    float: right;
+    display: flex;
+    /* horizontal */
+    justify-content: center;
+}
+
+#draggable2Immigration {
+    cursor: auto;
+    height: 100%;
+    margin-left: -950px;
+    float: right;
+    display: flex;
+    /* horizontal */
+    justify-content: center;
+}
+
+/*section 0 -- spacers*/
+
+.microspacer {
+    flex: 0 0 auto;
+    width: 14rem;
+    height: 100%;
+}
+
+.smallspacer {
+    flex: 0 0 auto;
+    width: 23rem;
+    height: 100%;
+    /*
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1px;
+*/
+}
+
+.mediumspacer {
+    flex: 0 0 auto;
+    width: 42rem;
+    height: 100%;
+    /*
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1px;
+*/
+}
+
+.largespacer {
+    flex: 0 0 auto;
+    width: 60rem;
+    height: 100%;
+    /*
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1px;
+*/
+}
+
+
+
+/*section 1 -- Intro Images*/
+
+.introImgWrapper {
+    flex: 0 0 auto;
+    width: 30rem;
+    height: 100%;
+}
+
+.introImg {
+    object-fit: cover;
+    height: 100%;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+    border: none;
+}
+
+/*section 2 -- Intro Text*/
+
+.introTextWrapper {
+    flex: 0 0 auto;
+    width: 39.2rem;
+    height: 100%;
+}
+
+.textcentering {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-54%);
+    transform: translateY(-54%);
+    padding-left: 5rem;
+    padding-right: 6rem;
+}
+
+.textcentering #introtext {
+    padding-top: 1.5rem;
+}
+
+/*section 3 -- full size images*/
+/*no declared width, as each image decides width*/
+
+.fullSizeImage {
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.fullSizeWrapper {
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-style: none;
+}
+
+#noborder {
+    border: none;
+}
+
+/*section 4 -- horizontal lesson*/
+
+.horizontalLesson {
+    flex: 0 0 auto;
+    width: 68.5rem;
+    height: 100%;
+}
+
+/* part of this section, just copying for reference
+.textcentering {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-52%);
+    transform: translateY(-52%);
+    padding-left: 5rem;
+    padding-right: 6rem;
+}
+*/
+
+/*section 5 -- centerline images */
+
+.centerlineimages {
+    flex: 0 0 auto;
+    height: 100%;
+    padding: 4rem 0;
+}
+
+.imgcentering {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-54%);
+    transform: translateY(-54%);
+    padding-left: 5rem;
+    padding-right: 6rem;
+    /*    put images right next to each other, centered*/
+    display: flex;
+    align-items: center;
+}
+
+/*these images don't have tp be the same pixel size, but preferably 900x600*/
+
+.lineimg {
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/*section 6 -- section paragraph*/
+
+.sectionparagraph {
+    flex: 0 0 auto;
+    width: 36rem;
+    height: 100%;
+}
+
+.textcentering #sectionheader {
+    padding-bottom: 0.75rem;
+    font-family: stratos, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/*section 7 -- vertical stack images*/
+
+.verticalstackimages {
+    flex: 0 0 auto;
+    width: 40rem;
+    height: 100%;
+    padding: 4rem 0;
+}
+
+.verticalcenterimages {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.stackimg {
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+/* section 8 -- endcard */
+
+.endCard {
+    flex: 0 0 auto;
+    width: 46rem;
+    height: 100%;
+}
+
+
+/*section 9 -- videos */
+
+.videowrapper {
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+iframe {
+    display: block;
+    /* iframes are inline by default */
+    background: #000;
+    border: none;
+    /* Reset default border */
+    height: 98vh;
+    width: 98vw;
+    /* Viewport-relative units */
+}
+
+/*section 10 -- large images, not full height */
+
+.largeimageflexwrapper {
+    flex: 0 0 auto;
+    height: 100%;
+}
+
+.largecenterimages {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.largeimage {
+    height: 650px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+
+.megif {
+    flex: 0 0 auto;
+    position: relative;
+    margin-top: 8rem;
+    margin-left: 9rem;
+}
+
+.megifimage {
+    height: 400px;
+}
+
+
+/* REMINDER FOR LATER TO ADD BROWSER KITS
+transform: rotate(-90deg);
+transform-origin:20% 40%;
+-ms-transform: rotate(-90deg); IE 9 */
+/*-ms-transform-origin:20% 40%; IE 9 */
+*/
+/*-webkit-transform: rotate(-90deg);  Safari and Chrome */
+*/
+/*-webkit-transform-origin:20% 40%; Safari and Chrome */
+*/
+/*-moz-transform: rotate(-90deg);  Firefox */
+/*-moz-transform-origin:20% 40%;  Firefox */
+/*-o-transform: rotate(-90deg);  Opera */
+/*-o-transform-origin:20% 40%;  Opera */
