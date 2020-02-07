@@ -479,7 +479,7 @@ a:hover {
     top: 4rem;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
-    transform: translateX(-19rem);
+    transform: translateX(-20rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -613,7 +613,7 @@ a:hover {
     transform: rotate(180deg);
     text-align: left;
     position: relative;
-    top: 23.5rem;
+    top: 23.8rem;
     left: 2rem;
 
 }
