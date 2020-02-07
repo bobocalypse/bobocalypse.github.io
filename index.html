@@ -10,13 +10,14 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+
     <!--   for every hcard(1,2,3,etc), add a corresponding #draggable(1,2,3,etc) and #drag(1,2,3,etc) to the function.-->
 
     <script>
         $(function() {
             var a = 3;
-            $("#draggable, #draggable2, #draggable3").draggable({
-                handle: $("#drag, #drag2, #vDrag1"),
+            $("#draggable, #draggable2, #draggable3, #draggable4").draggable({
+                handle: $("#drag, #drag2, #vDrag1, #vSMALLDrag1"),
                 grid: [20, 20],
                 cancel: ".cardText",
                 containment: ".hCardContainer",
@@ -74,7 +75,7 @@
                     </div>
                     <div class="vCardrightcolumn">
                         <p id="cardlessonABOUT">
-                            	&copy;2020 Robert Managad
+                            &copy;2020 Robert Managad
                         </p>
                     </div>
                     <div id="vDrag1">
@@ -83,11 +84,29 @@
                     </div>
                 </div>
             </section>
+
             <section class="microspacer"></section>
-            
+
             <div class="megif">
                 <img class="megifimage" src="images/homepage/face-me-4.png" alt="">
             </div>
+            
+            <section class="hCardFlex">
+                <div class="vCardSMALL" id="draggable4">
+                    <div class="vCardSMALLText">
+                        <span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="lessoncard" data-icon="bytesize:arrow-right" data-inline="false"></span>
+                        <h3 id="cardlesson">This website uses horizontal scroll.</h3>
+                    </div>
+                    <div id="vSMALLDrag1">
+                        <p id="dragP">click-n-drag-me.pdf</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="smallspacer"></section>
+
+
         </div>
     </div>
 

@@ -19,21 +19,57 @@ body {
     color: white;
 }
 
-.iconify#ImmigrationCard {
+.iconify#arrowCard1 {
     width: 35px;
     height: 35px;
     position: absolute;
     top: 4.4rem;
-    left: 17.5rem;
+    left: 22rem;
     color: black;
 }
 
-.iconify#SpotifyCard {
+.iconify#arrowCard2 {
     width: 35px;
     height: 35px;
     position: absolute;
-    top: 4.3rem;
-    left: 11.9rem;
+    top: 4.4rem;
+    left: 23rem;
+    color: black;
+}
+
+.iconify#arrowCard3 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.4rem;
+    left: 12rem;
+    color: black;
+}
+
+.iconify#arrowCard4 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.4rem;
+    left: 13.6rem;
+    color: black;
+}
+
+.iconify#arrowCard5 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.4rem;
+    left: 17.6rem;
+    color: black;
+}
+
+.iconify#arrowCard6 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 4.4rem;
+    left: 17.2rem;
     color: black;
 }
 
@@ -289,19 +325,6 @@ a:hover {
     cursor: all-scroll;
 }
 
-
-/*
-#below {
-    height: 20.75rem;
-    background-color: #b4b4b4;
-    position: relative;
-    top: 11rem;
-    -ms-transform: translateY(-0.3rem);
-    transform: translateY(-0.3rem);
-    transform: translateX(7rem);
-}
-*/
-
 .hCard2 {
     height: 17.875rem;
     width: 47.875rem;
@@ -330,6 +353,119 @@ a:hover {
     cursor: all-scroll;
 }
 
+.hCard3 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 19rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(0rem);
+    transform: translateX(16rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag3 {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+.hCard4 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 8rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(0rem);
+    transform: translateX(-54rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag4 {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+.hCard5 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 22rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(0rem);
+    transform: translateX(-16rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag5 {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+.hCard6 {
+    height: 17.875rem;
+    width: 47.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 7rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(0rem);
+    transform: translateX(-56rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#drag6 {
+    height: 2.45rem;
+    width: 47.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+
 
 
 /*lessons learned*/
@@ -343,7 +479,7 @@ a:hover {
     top: 4rem;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
-    transform: translateX(-20rem);
+    transform: translateX(-19rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -360,6 +496,37 @@ a:hover {
     transform: translateX(-0.06rem);
     box-shadow: none;
     cursor: all-scroll;
+    z-index: 999;
+}
+
+.vCard2 {
+    height: 33.75rem;
+    width: 27.875rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 3rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(-27rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+    z-index: 10;
+}
+
+#vDrag2 {
+    height: 2.45rem;
+    width: 27.875rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -2.5rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+    z-index: 999;
 }
 
 .vCardleftcolumn {
@@ -390,6 +557,41 @@ a:hover {
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
+.vCardSMALL {
+    height: 12rem;
+    width: 24rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 28rem;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(12rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+.vCardSMALLText {
+    width: 24rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+}
+
+#vSMALLDrag1 {
+    height: 2.45rem;
+    width: 24rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #212121;
+    position: relative;
+    top: -14rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+
 #cardlesson {
     color: #000000;
     font-weight: 300;
@@ -398,7 +600,7 @@ a:hover {
     line-height: 3.2rem;
 }
 
-#cardlessonP {
+#cardlessonP1 {
     transform: rotate(-90deg);
     /*	transform-origin: left top 0;*/
     color: #000000;
@@ -411,7 +613,25 @@ a:hover {
     transform: rotate(180deg);
     text-align: left;
     position: relative;
-    top: 24.5rem;
+    top: 23.5rem;
+    left: 2rem;
+
+}
+
+#cardlessonP2 {
+    transform: rotate(-90deg);
+    /*	transform-origin: left top 0;*/
+    color: #000000;
+    /*
+    position: absolute;
+    top: 28rem;
+    left: 26rem;
+*/
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    position: relative;
+    top: 18.3rem;
     left: 2rem;
 
 }
@@ -485,7 +705,7 @@ a:hover {
     width: 100%;
     height: 25%;
     border-top: 1px solid black;
-    position: absolute;
+    position: relative;
 }
 
 .fLeftcolumn {
@@ -661,6 +881,12 @@ li:first-child {
     border-color: white;
     border-width: 0.1px;
 */
+}
+
+/*this keeps the weird tiny margin from showing up*/
+
+img {
+    display: block;
 }
 
 
@@ -875,6 +1101,18 @@ iframe {
     height: 400px;
 }
 
+
+
+
+
+/* For responsive web, create a new container that wraps over everything to wrap into one big dude.
+
+@media {min-height: 1000px} {
+    height: 1000px
+
+
+}
+*/
 
 /* REMINDER FOR LATER TO ADD BROWSER KITS
 transform: rotate(-90deg);
