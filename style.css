@@ -230,7 +230,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-     color: #ffffff;
+    color: #ffffff;
 }
 
 li {
@@ -681,7 +681,7 @@ li a {
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
     transform: translateX(-13rem);
-    
+
     margin-left: -4rem;
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
@@ -1067,9 +1067,15 @@ img {
     padding-top: 1.5rem;
 }
 
-.textcentering# {
+.endcardcentering {
+    margin: 0;
+    position: relative;
+    top: 50%;
     -ms-transform: translateY(-54%);
     transform: translateY(-54%);
+    padding-left: 5rem;
+    padding-right: 6rem;
+
 }
 
 /*section 3 -- full size images*/
