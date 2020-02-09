@@ -7,11 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="jquery-mousewheel-3.1.13/jquery-3.3.1.min.js"> </script>
+
+    <script>
+        $(function() {
+            $("html, body, *").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 1);
+
+                event.preventDefault();
+
+            });
+        });
+
+    </script>
 </head>
 
 
 <body>
     <div class="workwrapper">
+        <div class="toparrowbar">
+            <p id="topbarP">spotify.html</p>
+            <div class="rightsidearrowbar">
+                <ul>
+                    <li><a href="index.html">back to portfolio</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="hScrollWorkPage">
             <section class="introImgWrapper">
                 <img class="introImg" src="images/spotify/spotify-intro.png" alt="">
@@ -34,7 +58,8 @@
 
 
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/340036113" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!--                <iframe src="https://player.vimeo.com/video/340036113" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                <video src="images/spotify/spotify-final-userflow.mp4" poster="images/spotify/spotify-final-placeholder.png" controls></video>
             </section>
             <section class="largeimageflexwrapper">
                 <div class="largecenterimages">
@@ -42,7 +67,8 @@
                 </div>
             </section>
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/340038235" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!--                <iframe src="https://player.vimeo.com/video/340038235" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                <video src="images/spotify/spotify-story.mp4" poster="images/spotify/spotify-story-placeholder.png" controls></video>
             </section>
 
             <section class="mediumspacer"></section>
@@ -54,14 +80,14 @@
                 </div>
             </section>
 
-            <section class="microspacer"></section>
+            <section class="smallspacer"></section>
 
             <section class="largeimageflexwrapper">
                 <div class="largecenterimages">
                     <img class="largeimage" src="images/spotify/spotify-research-4-min.jpg" alt="">
                 </div>
             </section>
-             <section class="microspacer"></section>
+            <section class="microspacer"></section>
             <section class="largeimageflexwrapper">
                 <div class="largecenterimages">
                     <img class="largeimage" src="images/spotify/smartwatch-research-1.jpg" alt="">
@@ -100,13 +126,16 @@
             <section class="mediumspacer"></section>
 
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/388915009" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!--                <iframe src="https://player.vimeo.com/video/388915009" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                <video src="images/spotify/spotify-white-circles-REDO.mp4" poster="images/spotify/spotify-white-circles-placeholder.png" controls></video>
             </section>
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/388915418" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!--                <iframe src="https://player.vimeo.com/video/388915418" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                <video src="images/spotify/spotify-map-white.mp4" poster="images/spotify/spotify-map-white-placeholder.png" controls></video>
             </section>
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/388915595" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<!--                <iframe src="https://player.vimeo.com/video/388915595" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+           <video src="images/spotify/spotify-map-shapes.mp4" poster="images/spotify/spotify-map-shapes-placeholder.png" controls></video>
             </section>
 
             <section class="sectionparagraph">
@@ -135,9 +164,12 @@
             <section class="fullSizeImage">
                 <img class="fullSizeWrapper" id="noborder" src="images/spotify/spotify-research-1-min.jpg" alt="">
             </section>
-            <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/388911434" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <section class="largeimageflexwrapper">
+                <div class="largecenterimages">
+                    <img class="largeimage" src="images/spotify/spotify-exploration-gif.gif" alt="">
+                </div>
             </section>
+
 
             <section class="mediumspacer"></section>
 
@@ -149,19 +181,20 @@
             </section>
 
             <section class="smallspacer"></section>
-            
+
             <section class="largeimageflexwrapper">
                 <div class="largecenterimages">
                     <img class="largeimage" src="images/spotify/spotify-animations-final.gif" alt="">
                 </div>
             </section>
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/340038235" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <!--                <iframe src="https://player.vimeo.com/video/340038235" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+                <video src="images/spotify/spotify-story.mp4" poster="images/spotify/spotify-story-placeholder.png" controls></video>
             </section>
 
             <section class="largespacer"></section>
 
-            <section class="endCard">
+            <section class="endCard" id="ENDcard">
                 <div class="textcentering">
                     <span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span>
                     <h3>When you’re designing for motion, I've learned that hardly anything you make is flat. Expressiveness carries a brand’s personality while also indicating a specific action or type of feedback. These sets of movements for a C.UI becomes UI patterns for a design system, where brand and product merge harmoniously.</h3>
@@ -169,22 +202,6 @@
 
             </section>
 
-        </div>
-    </div>
-
-    <div class="footerWrapper">
-        <div class="fLeftcolumn">
-            <h1 class="aboutHeader">A Deck of Stories</h1>
-            <p class="aboutText">Learning about people is awesome, but making puts it all into practice. These projects and case studies highlight some of my favorite lessons learned and the ever-changing process that's molded me into the designer I am today. </p>
-        </div>
-        <div class="fRightcolumn">
-            <nav>
-                <ul class="navstyle">
-                    <li><a href="work.html">work</a></li>
-                    <li><a href="illustration.html">drawings</a></li>
-                    <li><a href="index.html">about robert</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 

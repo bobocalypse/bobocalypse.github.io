@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="jquery-mousewheel-3.1.13/jquery-3.3.1.min.js"> </script>
+
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script>
         $(function() {
             $("#draggableImmigration").draggable({
@@ -16,6 +19,14 @@
             });
             $("#draggable2Immigration").draggable({
                 axis: "x"
+            });
+
+            $("html, body, *").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 1);
+
+                event.preventDefault();
+
             });
         });
 
@@ -27,6 +38,15 @@
 <body>
 
     <div class="workwrapper">
+
+        <div class="toparrowbar">
+            <p id="topbarP">immigration.html</p>
+            <div class="rightsidearrowbar">
+                <ul>
+                    <li><a href="index.html">back to portfolio</a></li>
+                </ul>
+            </div>
+        </div>
         <!-- Draggable DIV -->
         <div class="hScrollWorkPage">
             <section class="introImgWrapper">
@@ -40,7 +60,7 @@
                         "Shame is the main reason why homophobia starts and originates in my community. You cannot talk if you even suspect that you have a queer kid growing up. Even as a mother, you are trying to hide it, sugar coat it, to package it differently and close your eyes to reality."
                         <br>
                         <br>
-                        In 2010, homosexuality was depicted as a "non-traditional danger that threatens the existence of a Georgian nation." In this large-scale graphic installation, I depict the censored, strangled, and closeted emotions of Georgian immigrant, David Paul Kay. 
+                        In 2010, homosexuality was depicted as a "non-traditional danger that threatens the existence of a Georgian nation." In this large-scale graphic installation, I depict the censored, strangled, and closeted emotions of Georgian immigrant, David Paul Kay.
                     </p>
                 </div>
             </section>
@@ -161,7 +181,7 @@
 
             <section class="largespacer"></section>
 
-            <section class="endCard">
+            <section class="endCard" id="ENDcard">
                 <div class="textcentering">
                     <span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span>
                     <h3>Designers have the power to tell stories that are radically honest. In a time where the meaning of “identity” is far more than the eye can see, we have a stake in expressing the lives of the people we make for, including ourselves. At the end of it all, what matters is that we celebrate what it means to have an identity.</h3>
@@ -169,27 +189,12 @@
 
             </section>
 
-<!--
+            <!--
             <section class="microspacer"></section>
             <section class="smallspacer"></section>
             <section class="mediumspacer"></section>
             <section class="largespacer"></section>
 -->
-        </div>
-    </div>
-    <div class="footerWrapper">
-        <div class="fLeftcolumn">
-            <h1 class="aboutHeader">A Deck of Stories</h1>
-            <p class="aboutText">Learning about people is awesome, but making puts it all into practice. These projects and case studies highlight some of my favorite lessons learned and the ever-changing process that's molded me into the designer I am today. </p>
-        </div>
-        <div class="fRightcolumn">
-            <nav>
-                <ul class="navstyle">
-                    <li><a href="work.html">work</a></li>
-                    <li><a href="illustration.html">drawings</a></li>
-                    <li><a href="index.html">about robert</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 

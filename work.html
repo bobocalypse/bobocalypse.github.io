@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--DEFUNCT. NOW COMBINED WITH INDEX.-->
+
 <head>
     <meta charset="UTF-8">
     <title>work</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="jquery-mousewheel-3.1.13/jquery-3.3.1.min.js"> </script>
+    
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
     <!--   for every hcard(1,2,3,etc), add a corresponding #draggable(1,2,3,etc) and #drag(1,2,3,etc) to the function.-->
 
@@ -41,26 +47,30 @@
                 $(box).css("z-index", a++);
             });
 
-            //            $("#draggable2").draggable({
-            //                handle: $("#drag2"),
-            //                grid: [20, 20],
-            //                cancel: ".cardText",
-            //            });
-            //            $("div, p").disableSelection();
+            $("html, body, *").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 1);
+
+                event.preventDefault();
+
+            });
         });
 
     </script>
+
+
 </head>
 
 
 <body>
     <div class="workwrapper">
-        <div class="toptextbar">
-
-        </div>
         <div class="toparrowbar">
             <p id="topbarP">work.html</p>
-            <div class="arrowwrapper"><span class="iconify" id="topbar" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="topbar" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" id="topbar" data-icon="bytesize:arrow-right" data-inline="false"></span>
+            <div class="rightsidearrowbar">
+                <ul>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="index.html">about</a></li>
+                </ul>
             </div>
         </div>
 
@@ -109,7 +119,7 @@
                     </div>
                     <div class="vCardrightcolumn">
                         <p id="cardlessonP1">
-                           <a href="spotify.html">Excerpt from Spotify C.UI</a>
+                            <a href="spotify.html">Excerpt from Spotify C.UI</a>
                         </p>
                     </div>
                     <div id="vDrag1">
@@ -117,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="hCardFlex">
                 <div class="hCard3" id="draggable3">
                     <div class="cardText">
@@ -135,7 +145,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="hCardFlex">
                 <div class="hCard4" id="draggable4">
                     <div class="cardText">
@@ -153,7 +163,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="hCardFlex">
                 <div class="vCard2" id="draggable4">
                     <div class="vCardleftcolumn">
@@ -162,7 +172,7 @@
                     </div>
                     <div class="vCardrightcolumn">
                         <p id="cardlessonP2">
-                           <a href="immigration.html">Excerpt from Headlining Homophobia</a>
+                            <a href="immigration.html">Excerpt from Headlining Homophobia</a>
                         </p>
                     </div>
                     <div id="vDrag2">
@@ -170,7 +180,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="hCardFlex">
                 <div class="hCard5" id="draggable5">
                     <div class="cardText">
@@ -183,13 +193,13 @@
                         <img class="introImg" src="images/workday/workday-intro.jpg" alt="">
                     </div>
                     <div id="drag5">
-                        <p id="dragP">conversational-interface-vision.aep</p>
+                        <p id="dragP">internship.fig</p>
                         <p id="dragP" style="text-align: right; padding-right:1rem;"><a href="workday.html">view project</a></p>
                     </div>
                 </div>
             </section>
-            
-            <section class="hCardFlex">
+
+            <section class="hCardFlex" id="negativespacer">
                 <div class="hCard6" id="draggable6">
                     <div class="cardText">
                         <h1 id="cardH1">Headlining Homophobia: An Immigrant’s Journey</h1>
@@ -206,9 +216,11 @@
                     </div>
                 </div>
             </section>
+            
         </div>
     </div>
 
+    <!--
     <div class="footerWrapper">
         <div class="fLeftcolumn">
             <h1 class="aboutHeader">A Deck of Stories</h1>
@@ -224,4 +236,5 @@
             </nav>
         </div>
     </div>
+-->
 </body>

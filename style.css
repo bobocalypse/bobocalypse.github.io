@@ -4,12 +4,12 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
     overscroll-behavior: none;
 }
 
 body {
-    height: 100%;
+    height: 100vh;
 }
 
 .iconify {
@@ -151,9 +151,9 @@ p {
 
 a {
     font-family: stratos-lights, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 0.8rem;
+    font-size: 0.84rem;
 }
 
 a:link {
@@ -169,29 +169,40 @@ a:hover {
     text-decoration: underline;
 }
 
+/*
+#cardP {
+    color: #000000;
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    padding-right: 1.2rem;
+}
+
+#dragP {
+    height: inherit;
+    width: inherit;
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
+    position: absolute;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+*/
+
 .toparrowbar {
     position: sticky;
     width: 100%;
-    background-color: #212121;
+    background-color: #000000;
     border-bottom: solid 1px;
-    height: 2.6rem;
+    height: 2.5rem;
     display: flex;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
-}
-
-.arrowwrapper {
-    position: absolute;
-    right: 0px;
-    padding-top: 0.25rem;
-    padding-right: 0.5rem;
-    float: left;
-}
-
-.iconify#topbar {
-    color: #ffffff;
-    width: 32px;
-    height: 32px;
 }
 
 #topbarP {
@@ -208,11 +219,49 @@ a:hover {
     float: left;
 }
 
+.rightsidearrowbar {
+    position: absolute;
+    right: 0px;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     color: #ffffff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.84rem;
+}
+
+.iconify#topbar {
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+}
+
+
+
 /* horizontal wrapper */
 
 .workwrapper {
     /*    background-color: #eee;*/
-    height: 98%;
+    height: 100%;
     overflow-y: hidden;
     /*change to adjust position of footer*/
 }
@@ -229,9 +278,11 @@ a:hover {
 
 }
 
+/*
 ::-webkit-scrollbar {
     display: none;
 }
+*/
 
 /*enables horizontal scroll (acts as sections)*/
 
@@ -315,7 +366,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -343,7 +394,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -371,7 +422,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -387,10 +438,10 @@ a:hover {
     border: solid 1px;
     background-color: #FFFFFF;
     position: relative;
-    top: 8rem;
+    top: 6rem;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(0rem);
-    transform: translateX(-54rem);
+    transform: translateX(-60rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -399,7 +450,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -427,7 +478,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -446,7 +497,7 @@ a:hover {
     top: 7rem;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(0rem);
-    transform: translateX(-56rem);
+    transform: translateX(-5rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -455,7 +506,7 @@ a:hover {
     width: 47.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -488,7 +539,7 @@ a:hover {
     width: 27.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -518,7 +569,7 @@ a:hover {
     width: 27.875rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
     position: relative;
     top: -2.5rem;
     -ms-transform: translateY(-0.2rem);
@@ -563,11 +614,27 @@ a:hover {
     border: solid 1px;
     background-color: #FFFFFF;
     position: relative;
-    top: 28rem;
+    top: 21vh;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
-    transform: translateX(12rem);
+    transform: translateX(13rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+    z-index: 3;
+}
+
+#vSMALLDrag1 {
+    height: 2.45rem;
+    width: 24rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #000000;
+    position: relative;
+    top: -14rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
 }
 
 .vCardSMALLText {
@@ -576,12 +643,55 @@ a:hover {
     padding-top: 1rem;
 }
 
-#vSMALLDrag1 {
+.vCardSMALL2 {
+    height: 12rem;
+    width: 24rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 34vh;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(-7rem);
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#vSMALLDrag2 {
     height: 2.45rem;
     width: 24rem;
     border: solid 1px;
     border-bottom: none;
-    background-color: #212121;
+    background-color: #000000;
+    position: relative;
+    top: -14rem;
+    -ms-transform: translateY(-0.2rem);
+    transform: translateY(-0rem);
+    transform: translateX(-0.06rem);
+    box-shadow: none;
+    cursor: all-scroll;
+}
+
+.vCardSMALL3 {
+    height: 12rem;
+    width: 24rem;
+    border: solid 1px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 46vh;
+    -ms-transform: translateY(-0.3rem);
+    transform: translateY(-0rem);
+    transform: translateX(-9rem);
+    
+    margin-left: -20rem;
+    box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+}
+
+#vSMALLDrag3 {
+    height: 2.45rem;
+    width: 24rem;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: #000000;
     position: relative;
     top: -14rem;
     -ms-transform: translateY(-0.2rem);
@@ -701,13 +811,16 @@ a:hover {
 
 
 
+/*
 .footerWrapper {
     width: 100%;
     height: 25%;
     border-top: 1px solid black;
     position: relative;
 }
+*/
 
+/*
 .fLeftcolumn {
     float: left;
     width: 55%;
@@ -724,7 +837,9 @@ a:hover {
     font-style: normal;
     font-size: 1.5rem;
 }
+*/
 
+/*
 .aboutText {
     padding-top: 0.4rem;
     padding-left: 7rem;
@@ -733,17 +848,23 @@ a:hover {
     line-height: 1.3rem;
     color: black;
 }
+*/
 
+/*
 .fRightcolumn {
     float: left;
     width: 45%;
     height: 100%;
 }
+*/
 
+/*
 nav {
     height: 100%;
 }
+*/
 
+/*
 .navstyle {
     list-style-type: none;
     margin: 0;
@@ -758,7 +879,9 @@ nav {
     text-align: left;
     height: 100%;
 }
+*/
 
+/*
 li a {
     display: block;
     color: #000;
@@ -766,29 +889,35 @@ li a {
     text-decoration: none;
     box-sizing: border-box;
 }
+*/
+/*
 
 li {
     border-bottom: 1px solid #555;
     height: 33.34%;
 
 }
+*/
 
+/*
 li:last-child {
     border-bottom: none;
 }
+*/
 
+/*
 li:first-child {
     border-top: none;
 }
+*/
 
 /*work page wrapper */
 
 .hScrollWorkPage {
-    height: 100%;
+    height: 95%;
     overflow: auto;
     display: flex;
     flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
     background-color: #000000;
 }
 
@@ -883,6 +1012,11 @@ li:first-child {
 */
 }
 
+#negativespacer {
+    flex: 0 0 auto;
+    margin-left: -50rem;
+}
+
 /*this keeps the weird tiny margin from showing up*/
 
 img {
@@ -923,14 +1057,19 @@ img {
     margin: 0;
     position: relative;
     top: 50%;
-    -ms-transform: translateY(-54%);
-    transform: translateY(-54%);
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
     padding-left: 5rem;
     padding-right: 6rem;
 }
 
 .textcentering #introtext {
     padding-top: 1.5rem;
+}
+
+.textcentering#ENDcard {
+    -ms-transform: translateY(-54%);
+    transform: translateY(-54%);
 }
 
 /*section 3 -- full size images*/
@@ -1054,6 +1193,17 @@ img {
 .videowrapper {
     flex: 0 0 auto;
     height: 100%;
+    overflow-y: hidden;
+}
+
+video {
+    display: block;
+    /* iframes are inline by default */
+    background: #000;
+    border: none;
+    /* Reset default border */
+    height: 100%;
+    width: 98vw;
 }
 
 iframe {
@@ -1062,9 +1212,10 @@ iframe {
     background: #000;
     border: none;
     /* Reset default border */
-    height: 98vh;
+    height: 100%;
     width: 98vw;
-    /* Viewport-relative units */
+    overflow-y: hidden
+        /* Viewport-relative units */
 }
 
 /*section 10 -- large images, not full height */
@@ -1084,7 +1235,6 @@ iframe {
 
 .largeimage {
     height: 650px;
-    margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
 }
@@ -1100,9 +1250,6 @@ iframe {
 .megifimage {
     height: 400px;
 }
-
-
-
 
 
 /* For responsive web, create a new container that wraps over everything to wrap into one big dude.

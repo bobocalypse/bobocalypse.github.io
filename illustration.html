@@ -7,10 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="jquery-mousewheel-3.1.13/jquery-3.3.1.min.js"> </script>
+    
+    <script>
+        $(function() {
+            $("html, body, *").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 1);
+
+                event.preventDefault();
+
+            });
+        });
+
+    </script>
+    
 </head>
 
 <body>
+
     <div class="workwrapper">
+        <div class="toparrowbar">
+            <p id="topbarP">illustration.html</p>
+            <div class="rightsidearrowbar">
+                <ul>
+                    <li><a href="index.html">back to portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="hScrollWorkPage">
             <section class="introImgWrapper">
                 <img class="introImg" src="images/illustration/bird-explore-5-min.png" alt="">
@@ -36,12 +63,13 @@
                     <h3>In telling one-shot stories, I constantly go back and forth between the people I’m depicting and the exaggerated features that I’m applying to them. Breaking rules is just another part of the practice.</h3>
                 </div>
             </section>
-            
+
             <section class="mediumspacer"></section>
 
 
             <section class="videowrapper">
-                <iframe src="https://player.vimeo.com/video/388721467" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<!--                <iframe src="https://player.vimeo.com/video/388721467" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>-->
+               <video src="images/illustration/TheHikerontheHill-compressed-20mb.mp4" poster="images/illustration/hiker-placeholder.png" controls></video>
             </section>
 
             <section class="sectionparagraph">
@@ -75,9 +103,9 @@
 
                 </div>
             </section>
-            
-             <section class="mediumspacer"></section>
-            
+
+            <section class="mediumspacer"></section>
+
             <section class="horizontalLesson">
                 <div class="textcentering">
                     <span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span>
@@ -169,7 +197,7 @@
             <section class="fullSizeImage">
                 <img class="fullSizeWrapper" id="noborder" src="images/illustration/bird-explore-7-min.png" alt="">
             </section>
-            
+
             <section class="sectionparagraph">
                 <div class="textcentering">
                     <p id="sectionheader">
@@ -242,7 +270,7 @@
                 </div>
             </section>
 
-<!--
+            <!--
             <section class="mediumspacer"></section>
 
             <section class="horizontalLesson">
@@ -276,7 +304,7 @@
 
             <section class="largespacer"></section>
 
-            <section class="endCard">
+            <section class="endCard" id="ENDcard">
                 <div class="textcentering">
                     <span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span>
                     <h3>As a budding product designer, I also consider world building as brand building. When developing an illustration suite to depict the people using your product, you’re actually depicting people from the world you’ve built. It’s the work of building the world that gives rise to considerate representations of people and their identities.</h3>
@@ -284,21 +312,6 @@
 
             </section>
 
-        </div>
-    </div>
-    <div class="footerWrapper">
-        <div class="fLeftcolumn">
-            <h1 class="aboutHeader">A Deck of Stories</h1>
-            <p class="aboutText">Learning about people is awesome, but making puts it all into practice. These projects and case studies highlight some of my favorite lessons learned and the ever-changing process that's molded me into the designer I am today. </p>
-        </div>
-        <div class="fRightcolumn">
-            <nav>
-                <ul class="navstyle">
-                    <li><a href="work.html">work</a></li>
-                    <li><a href="illustration.html">drawings</a></li>
-                    <li><a href="index.html">about robert</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 </body>

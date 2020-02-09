@@ -7,11 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lbv2eya.css">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script src="jquery-mousewheel-3.1.13/jquery-3.3.1.min.js"> </script>
+    
+    <script>
+        $(function() {
+            $("html, body, *").mousewheel(function(event, delta) {
+
+                this.scrollLeft -= (delta * 1);
+
+                event.preventDefault();
+
+            });
+        });
+
+    </script>
 </head>
 
 
 <body>
     <div class="workwrapper">
+      <div class="toparrowbar">
+            <p id="topbarP">schoolbus.html</p>
+            <div class="rightsidearrowbar">
+                <ul>
+                    <li><a href="index.html">back to portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+       
         <div class="hScrollWorkPage">
             <section class="introImgWrapper">
                 <img class="introImg" src="images/schoolbus/bus-intro.jpg" alt="">
@@ -48,7 +73,7 @@
                 </div>
             </section>
 
-            <section class="smallspacer"></section>
+            <section class="mediumspacer"></section>
 
             <section class="fullSizeImage">
                 <img class="fullSizeWrapper" id="noborder" src="images/schoolbus/vls-1.png" alt="">
@@ -98,7 +123,7 @@
                 </div>
             </section>
 
-            <section class="smallspacer"></section>
+            <section class="mediumspacer"></section>
 
             <section class="fullSizeImage">
                 <img class="fullSizeWrapper" id="noborder" src="images/schoolbus/wireframes-1.png" alt="">
@@ -117,7 +142,7 @@
             <section class="horizontalLesson">
                 <div class="textcentering">
                     <span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-right" data-inline="false"></span>
-                    <h3>Before prototyping the system, we researched. It was important for us to remember that the population we were working with didn’t always have access to every new technology, so any concept we came up with had to play to both analogue and digital mediums.</h3>
+                    <h3>Before prototyping the system, we researched. It was important for us to remember that the kids we were working with didn’t always have access to every new technology, so any concept we came up with had to play to both analogue and digital mediums.</h3>
                 </div>
             </section>
 
@@ -155,17 +180,8 @@
 
             <section class="smallspacer"></section>
 
-            <section class="verticalstackimages">
-                <div class="verticalcenterimages">
-                    <img class="stackimg" src="images/schoolbus/workshop-2.jpg" alt="">
-                    <img class="stackimg" src="images/schoolbus/workshop-3.jpg" alt="">
-                </div>
-            </section>
-
-            <section class="largeimageflexwrapper">
-                <div class="largecenterimages">
-                    <img class="largeimage" src="images/schoolbus/workshop-1.jpg" alt="">
-                </div>
+            <section class="fullSizeImage">
+                <img class="fullSizeWrapper" id="noborder" src="images/schoolbus/workshop-collective.png" alt="">
             </section>
 
             <section class="sectionparagraph">
@@ -184,8 +200,8 @@
 
             <section class="largespacer"></section>
 
-            <section class="endCard">
-                <div class="textcentering">
+            <section class="endCard" id="ENDcard">
+                <div class="textcentering" id="ENDcard">
                     <span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span><span class="iconify" data-icon="bytesize:arrow-bottom" data-inline="false"></span>
                     <h3>Our goal with Discoverables was to create a game that engages students and develops new interests while also encouraging collaboration within a bus community, and we felt we got pretty close to doing that. It’s easy to forget the important of play in design, especially when you get bogged down in formalities.</h3>
                 </div>
@@ -195,22 +211,6 @@
 
 
 
-        </div>
-    </div>
-
-    <div class="footerWrapper">
-        <div class="fLeftcolumn">
-            <h1 class="aboutHeader">A Deck of Stories</h1>
-            <p class="aboutText">Learning about people is awesome, but making puts it all into practice. These projects and case studies highlight some of my favorite lessons learned and the ever-changing process that's molded me into the designer I am today. </p>
-        </div>
-        <div class="fRightcolumn">
-            <nav>
-                <ul class="navstyle">
-                    <li><a href="work.html">work</a></li>
-                    <li><a href="illustration.html">drawings</a></li>
-                    <li><a href="index.html">about robert</a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 
