@@ -677,12 +677,12 @@ li a {
     border: solid 1px;
     background-color: #FFFFFF;
     position: relative;
-    top: 46vh;
+    top: 50vh;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
-    transform: translateX(-9rem);
+    transform: translateX(-13rem);
     
-    margin-left: -20rem;
+    margin-left: -4rem;
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -1067,7 +1067,7 @@ img {
     padding-top: 1.5rem;
 }
 
-.textcentering#ENDcard {
+.textcentering# {
     -ms-transform: translateY(-54%);
     transform: translateY(-54%);
 }
