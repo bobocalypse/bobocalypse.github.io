@@ -359,6 +359,7 @@ li a {
     transform: translateY(-0rem);
     transform: translateX(6rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
+    z-index: 3;
 }
 
 #drag {
