@@ -354,10 +354,10 @@ li a {
     border: solid 1px;
     background-color: #FFFFFF;
     position: relative;
-    top: 15vh;
+    top: 12vh;
     -ms-transform: translateY(-0.3rem);
     transform: translateY(-0rem);
-    transform: translateX(6rem);
+    transform: translateX(4rem);
     box-shadow: 13px 10px 0 5px rgba(0, 0, 0, 0.45);
     z-index: 3;
 }
