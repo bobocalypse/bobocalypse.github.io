@@ -130,6 +130,16 @@ h3 {
     color: #ffffff;
 }
 
+h3 a {
+    font-family: stratos-lights, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+    color: #ffffff;
+    
+}
+
 h4 {
     font-family: stratos-lights, sans-serif;
     font-weight: 300;
