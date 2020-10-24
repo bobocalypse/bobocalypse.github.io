@@ -351,6 +351,7 @@ li a {
 .cardImg {
     width: 21.2rem;
     float: left;
+    border-left: 1px solid;
     height: 100%;
 }
 
